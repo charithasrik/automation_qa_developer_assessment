@@ -2,32 +2,10 @@
 
 [![n8n Workflow](https://img.shields.io/badge/n8n-Automation-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io)
 [![API Integration](https://img.shields.io/badge/HackerNews-API-FF6600?style=for-the-badge&logo=y-combinator&logoColor=white)](https://github.com/HackerNews/API)
-[![QA Report](https://img.shields.io/badge/QA_Report-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
+[![QA Report](https://img.shields.io/badge/QA_Report-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
 [![SMTP](https://img.shields.io/badge/SMTP-Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](https://n8n.io)
 
 Comprehensive repository containing automated workflow solutions built on **n8n** and comprehensive QA testing reports for the **Automation QA Developer Assessment**. 
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Repository Structure](#-repository-structure)
-- [Task 1: QA Bug & Assessment Report](#-task-1-qa-bug--assessment-report)
-- [Task 2: Hacker News Hourly Digest](#-task-2-hacker-news-hourly-digest)
-  - [Workflow Architecture](#workflow-architecture)
-  - [Node Breakdown](#node-breakdown)
-  - [Configuration & Setup](#configuration--setup)
-  - [Sample Output & Screenshots](#sample-output--screenshots)
-  - [QA & Engineering Analysis](#qa--engineering-analysis)
-- [Bonus Task: Website Uptime Monitor](#-bonus-task-website-uptime-monitor)
-  - [Workflow Architecture](#workflow-architecture-1)
-  - [Node Breakdown](#node-breakdown-1)
-  - [Configuration & Setup](#configuration--setup-1)
-  - [Sample Output & Screenshots](#sample-output--screenshots-1)
-  - [QA & Engineering Analysis](#qa--engineering-analysis-1)
-- [Importing Workflows into n8n](#-importing-workflows-into-n8n)
-- [Tech Stack](#-tech-stack)
 
 ---
 
@@ -67,7 +45,7 @@ automation_qa_developer_assessment/
 
 The QA testing report evaluates the RealWorld Conduit Web Application (`https://demo.realworld.show/`).
 
-- **Document Path:** [`Task1_QA_Report_CharithaSri.pdf`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
+- **Document Path:** [`Task1_QA_Report_CharithaSri.pdf`](Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
 - **Scope:** Functional testing, UI/UX consistency, API behavior validation, edge case identification, and defect documentation.
 
 ---
@@ -104,7 +82,7 @@ flowchart LR
 
 ### Configuration & Setup
 
-- **Import File:** [`Task2_Workflow_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/Task2_Workflow_CharithaSri.json)
+- **Import File:** [`Task2_Workflow_CharithaSri.json`](Task2_n8n_API_workflow/Task2_Workflow_CharithaSri.json)
 - **SMTP Setup:** Configure Host, Port, Credentials, `From Email`, and `To Email` in the *Notify The Stories* node.
 - **Threshold Tuning:** Default minimum score is `100`, candidate pool is `20` items, digest capacity is `5` stories.
 
@@ -128,8 +106,8 @@ https://example.com/modern-architecture
 ```
 
 *Visual Screenshots:*
-- [Workflow Structure](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/screenshots/workflow.png)
-- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/screenshots/successful_execution.png)
+- [Workflow Structure](Task2_n8n_API_workflow/screenshots/workflow.png)
+- [Successful Execution Log](Task2_n8n_API_workflow/screenshots/successful_execution.png)
 
 ### QA & Engineering Analysis
 
@@ -164,7 +142,7 @@ flowchart LR
 
 ### Configuration & Setup
 
-- **Import File:** [`Bonus_UptimeMonitor_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/Bonus_UptimeMonitor_CharithaSri.json)
+- **Import File:** [`Bonus_UptimeMonitor_CharithaSri.json`](Bonus_Uptime_Monitor/Bonus_UptimeMonitor_CharithaSri.json)
 - **Target URL:** `https://demo.realworld.show/` (customizable in HTTP Request node).
 
 ### Sample Output & Screenshots
@@ -183,8 +161,8 @@ Checked At: 2026-09-29T10:00:00.000Z
 ```
 
 *Visual Screenshots:*
-- [Workflow Diagram](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/workflow.png)
-- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/successful_execution.png)
+- [Workflow Diagram](Bonus_Uptime_Monitor/workflow.png)
+- [Successful Execution Log](Bonus_Uptime_Monitor/successful_execution.png)
 
 ### QA & Engineering Analysis
 
