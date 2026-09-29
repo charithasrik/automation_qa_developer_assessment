@@ -2,9 +2,10 @@
 
 [![n8n Workflow](https://img.shields.io/badge/n8n-Automation-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io)
 [![API Integration](https://img.shields.io/badge/HackerNews-API-FF6600?style=for-the-badge&logo=y-combinator&logoColor=white)](https://github.com/HackerNews/API)
+[![QA Report](https://img.shields.io/badge/QA_Report-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
 [![SMTP](https://img.shields.io/badge/SMTP-Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](https://n8n.io)
 
-Comprehensive repository containing automated workflow solutions built on **n8n** for the **Automation QA Developer Assessment**. This repository features an automated hourly Hacker News API news digest workflow alongside a website uptime monitoring solution.
+Comprehensive repository containing automated workflow solutions built on **n8n** and comprehensive QA testing reports for the **Automation QA Developer Assessment**. 
 
 ---
 
@@ -12,6 +13,7 @@ Comprehensive repository containing automated workflow solutions built on **n8n*
 
 - [Overview](#-overview)
 - [Repository Structure](#-repository-structure)
+- [Task 1: QA Bug & Assessment Report](#-task-1-qa-bug--assessment-report)
 - [Task 2: Hacker News Hourly Digest](#-task-2-hacker-news-hourly-digest)
   - [Workflow Architecture](#workflow-architecture)
   - [Node Breakdown](#node-breakdown)
@@ -31,10 +33,11 @@ Comprehensive repository containing automated workflow solutions built on **n8n*
 
 ## 🔍 Overview
 
-This assessment demonstrates practical workflow automation, API integration, data manipulation with JavaScript, error handling, and SMTP notification systems.
+This assessment demonstrates end-to-end QA manual testing, defect reporting, workflow automation, API integration, data manipulation with JavaScript, error handling, and SMTP notification systems.
 
-1. **Task 2: Hacker News Hourly Digest** – Periodically fetches top stories from the official Hacker News API, filters items scoring $\ge 100$, formats the top 5 articles into a structured digest, and emails the digest to subscribers.
-2. **Bonus Task: Website Uptime Monitor** – Periodically pings a specified web endpoint (`https://demo.realworld.show/`), evaluates HTTP status codes, formats detailed execution metrics (status code, UTC timestamp), and handles status notification workflows.
+1. **Task 1: QA Bug & Assessment Report** – Formal QA test execution and bug report targeting the RealWorld Conduit web application (`https://demo.realworld.show/`), documenting critical user-facing issues and quality analysis in PDF format.
+2. **Task 2: Hacker News Hourly Digest** – Periodically fetches top stories from the official Hacker News API, filters items scoring $\ge 100$, formats the top 5 articles into a structured digest, and emails the digest to subscribers.
+3. **Bonus Task: Website Uptime Monitor** – Periodically pings a specified web endpoint (`https://demo.realworld.show/`), evaluates HTTP status codes, formats detailed execution metrics (status code, UTC timestamp), and handles status notification workflows.
 
 ---
 
@@ -43,18 +46,29 @@ This assessment demonstrates practical workflow automation, API integration, dat
 ```
 automation_qa_developer_assessment/
 ├── README.md                                  # Global Repository Documentation
-├── Task2-n8n-API-workflow/                    # Task 2: Hacker News Digest Solution
+├── Task1_QA_Report/                           # Task 1: QA Testing & Bug Report
+│   └── Task1_QA_Report_CharithaSri.pdf        # Formal QA Bug Report (PDF)
+├── Task2_n8n_API_workflow/                    # Task 2: Hacker News Digest Solution
 │   ├── Task2_Workflow_CharithaSri.json       # n8n Workflow JSON Export
 │   ├── README.md                              # Detailed Task 2 Documentation
 │   └── screenshots/                           # Execution & Workflow Screenshots
 │       ├── workflow.png
 │       └── successful_execution.png
-└── Bonus-Uptime-Monitor/                      # Bonus: Website Uptime Monitor Solution
+└── Bonus_Uptime_Monitor/                      # Bonus: Website Uptime Monitor Solution
     ├── Bonus_UptimeMonitor_CharithaSri.json   # n8n Workflow JSON Export
     ├── README.md                              # Detailed Uptime Monitor Documentation
     ├── workflow.png                           # Workflow Diagram Screenshot
     └── successful_execution.png               # Execution Screenshot
 ```
+
+---
+
+## 📑 Task 1: QA Bug & Assessment Report
+
+The QA testing report evaluates the RealWorld Conduit Web Application (`https://demo.realworld.show/`).
+
+- **Document Path:** [`Task1_QA_Report_CharithaSri.pdf`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task1_QA_Report/Task1_QA_Report_CharithaSri.pdf)
+- **Scope:** Functional testing, UI/UX consistency, API behavior validation, edge case identification, and defect documentation.
 
 ---
 
@@ -90,7 +104,7 @@ flowchart LR
 
 ### Configuration & Setup
 
-- **Import File:** [`Task2_Workflow_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2-n8n-API-workflow/Task2_Workflow_CharithaSri.json)
+- **Import File:** [`Task2_Workflow_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/Task2_Workflow_CharithaSri.json)
 - **SMTP Setup:** Configure Host, Port, Credentials, `From Email`, and `To Email` in the *Notify The Stories* node.
 - **Threshold Tuning:** Default minimum score is `100`, candidate pool is `20` items, digest capacity is `5` stories.
 
@@ -114,8 +128,8 @@ https://example.com/modern-architecture
 ```
 
 *Visual Screenshots:*
-- [Workflow Structure](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2-n8n-API-workflow/screenshots/workflow.png)
-- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2-n8n-API-workflow/screenshots/successful_execution.png)
+- [Workflow Structure](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/screenshots/workflow.png)
+- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Task2_n8n_API_workflow/screenshots/successful_execution.png)
 
 ### QA & Engineering Analysis
 
@@ -150,7 +164,7 @@ flowchart LR
 
 ### Configuration & Setup
 
-- **Import File:** [`Bonus_UptimeMonitor_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus-Uptime-Monitor/Bonus_UptimeMonitor_CharithaSri.json)
+- **Import File:** [`Bonus_UptimeMonitor_CharithaSri.json`](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/Bonus_UptimeMonitor_CharithaSri.json)
 - **Target URL:** `https://demo.realworld.show/` (customizable in HTTP Request node).
 
 ### Sample Output & Screenshots
@@ -169,8 +183,8 @@ Checked At: 2026-09-29T10:00:00.000Z
 ```
 
 *Visual Screenshots:*
-- [Workflow Diagram](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus-Uptime-Monitor/workflow.png)
-- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus-Uptime-Monitor/successful_execution.png)
+- [Workflow Diagram](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/workflow.png)
+- [Successful Execution Log](file:///c:/Users/chari/OneDrive/Documents/Automation_qa_developer_assessment/Bonus_Uptime_Monitor/successful_execution.png)
 
 ### QA & Engineering Analysis
 
@@ -184,8 +198,8 @@ Checked At: 2026-09-29T10:00:00.000Z
 1. Launch your **n8n** instance (Cloud or Desktop/Docker).
 2. Click **Workflows** $\rightarrow$ **Import from File...**
 3. Select either JSON export:
-   - `Task2-n8n-API-workflow/Task2_Workflow_CharithaSri.json`
-   - `Bonus-Uptime-Monitor/Bonus_UptimeMonitor_CharithaSri.json`
+   - `Task2_n8n_API_workflow/Task2_Workflow_CharithaSri.json`
+   - `Bonus_Uptime_Monitor/Bonus_UptimeMonitor_CharithaSri.json`
 4. Attach your target **SMTP credentials**.
 5. Save & Activate the workflow.
 
@@ -193,6 +207,7 @@ Checked At: 2026-09-29T10:00:00.000Z
 
 ## 🛠️ Tech Stack
 
+- **QA & Testing:** Manual QA, PDF Bug Reporting
 - **Workflow Engine:** [n8n](https://n8n.io)
 - **APIs:** Hacker News Firebase API
 - **Scripting:** JavaScript (Node.js ES6 inside n8n Code Nodes)
